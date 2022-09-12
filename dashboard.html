@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KayPlanet</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <!--=========== NAV ==========-->
+    <nav>
+        <div class="container nav_container">
+            <a href="index.html" class="nav_logo"><span>Kay</span>planet</a>
+            <ul class="nav_items">
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <!--<li><a href="signin.html">Sign in</a></li>-->
+                <li class="nav_profile">
+                    <div class="avatar">
+                        <img src="./images/avatar1.jpg">
+                    </div>
+                    <ul>
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                        <li><a href="logout.html">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <button id="open_nav-btn"><i class="fa-solid fa-bars"></i></button>
+            <button id="close_nav-btn"><i class="fa-solid fa-times"></i></button>
+        </div>
+    </nav>
+
+    <!--======= MANAGE POSTS =======-->
+    <section class="dashboard">
+        <div class="container dashboard_container">
+            <button id="show_sidebar-btn" class="sidebar_toggle"><i class="fa fa-angle-right"></i></button>
+            <button id="hide_sidebar-btn" class="sidebar_toggle"><i class="fa fa-angle-left"></i></button>
+            <aside>
+                <ul>
+                    <li>
+                        <a href="add-post.html">
+                            <i class="fa fa-pen"></i>
+                            <p>Add Post</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="dashboard.html" class="active">
+                            <i class="fa fa-stamp"></i>
+                            <p>Manage Posts</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="add-user.html">
+                            <i class="fa fa-user"></i>
+                            <p>Add User</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="manage-users.html">
+                            <i class="fa fa-users"></i>
+                            <p>Manage Users</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="add-category.html">
+                            <i class="fa fa-edit"></i>
+                            <p>Add Category</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="manage-categories.html">
+                            <i class="fa fa-list"></i>
+                            <p>Manage Categories</p>
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+            <main>
+                <h2>Manage Posts</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Category</th>
+                            <th>Edit</th>
+                            <th>Delete</th>
+                        </tr>
+                        <tbody>
+                            <tr>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
+                                <td>Nature</td>
+                                <td><a href="edit-post.html" class="btn sm">Edit</a></td>
+                                <td><a href="delete-category.html" class="btn sm danger">Delete</a></td>
+                            </tr>
+                            <tr>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
+                                <td>Entertainment</td>
+                                <td><a href="edit-post.html" class="btn sm">Edit</a></td>
+                                <td><a href="delete-category.html" class="btn sm danger">Delete</a></td>
+                            </tr>
+                            <tr>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
+                                <td>Sports</td>
+                                <td><a href="edit-post.html" class="btn sm">Edit</a></td>
+                                <td><a href="delete-category.html" class="btn sm danger">Delete</a></td>
+                            </tr>
+                        </tbody>
+                    </thead>
+                </table>
+            </main>
+        </div>
+    </section>
+
+    <!--======= FOOTER =======-->
+    <footer>
+        <div class="footer_socials">
+            <a href="" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+
+        <div class="container footer_container">
+            <article>
+                <h4>Categories</h4>
+                <ul>
+                    <li><a href="">Sports</a></li>
+                    <li><a href="">Cryptocurrency</a></li>
+                    <li><a href="">Nature</a></li>
+                    <li><a href="">Entertainment</a></li>
+                    <li><a href="">Travel</a></li>
+                    <li><a href="">Technology</a></li>
+                </ul>
+            </article>
+            <article>
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="">Customer care</a></li>
+                    <li><a href="">Help line</a></li>
+                    <li><a href="">Quick links</a></li>
+                    <li><a href="">Suggest</a></li>
+                </ul>
+            </article>
+            <article>
+                <h4>Blog</h4>
+                <ul>
+                    <li><a href="">Featured</a></li>
+                    <li><a href="">Recent</a></li>
+                    <li><a href="">Junk</a></li>
+                    <li><a href="">All</a></li>
+                </ul>
+            </article>
+            <article>
+                <h4>Permalinks</h4>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </article>
+        </div>
+
+        <div class="footer_copyright">
+            <small>Copyright &copy; Kayplanet 2022</small>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
